@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Игра Первых — прототип сайта</title>
+   <link rel="icon" type="img\favicon.ico" href="img\favicon.ico">
+  <link rel="icon" type="img\favicon-32x32.png" sizes="32x32" href="img\favicon-32x32.png">
+  <link rel="icon" type="img\favicon-16x16.png" sizes="16x16" href="img\favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <img src="img\icons\logo.png" alt="Логотип">
+      </div>
+      <nav class="nav" id="mainNav">
+        <ul class="nav__list">
+          <li><a href="#" data-page="about" class="nav__link active">О проекте</a></li>
+          <li><a href="#" data-page="gameplay" class="nav__link">Игровой процесс</a></li>
+          <li><a href="#" data-page="events" class="nav__link">Мероприятия</a></li>
+          <li><a href="#" data-page="news" class="nav__link">Новости</a></li>
+          <li><a href="#" data-page="library" class="nav__link">Библиотека</a></li>
+          <li><a href="#" data-page="feedback" class="nav__link">Обратная связь</a></li>
+          <li><a href="#" data-page="partners" class="nav__link">Партнёры</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="role-switcher">
+          <span class="role-label">Роль:</span>
+          <button id="roleUser" class="role-btn role-btn--active">Пользователь</button>
+          <button id="roleAdmin" class="role-btn">Администратор</button>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
+  <main class="main container" id="mainContent">
+    <!-- Сюда будет вставляться содержимое страниц через JS -->
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p>&copy; 2026 Всероссийский проект «Игра Первых»</p>
+        <p>Демонстрационный прототип для конкурса</p>
+      </div>
+      <div class="footer__socials">
+    <a href="https://vk.ru/mypervie" target="_blank" class="social-link"><i class="fab fa-vk"></i></a>
+    <a href="https://t.me/mypervie" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a>
+    <a href="https://rutube.ru/channel/30358391/" target="_blank" class="social-link"><img src="img/icons/rutube.png" alt="Rutube" style="width: 25px; height: 25px; object-fit: contain;"></a>
+    <a href="https://max.ru/mypervie?ysclid=mthogzl4ov621825812" target="_blank" class="social-link"><img src="img/icons/max.png" alt="МАКС" style="width: 25px; height: 25px; object-fit: contain;"></a>
+</div>
+      <div class="footer__app">
+        <span class="app-label">Скачать приложение:</span>
+        <a href="#" class="app-link"><i class="fab fa-apple"></i> App Store</a>
+        <a href="#" class="app-link"><i class="fab fa-google-play"></i> Google Play</a>
+        <a href="#" class="app-link"><i class="fas fa-download"></i> .apk</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ФОРМ / РЕДАКТИРОВАНИЯ -->
+  <div class="modal" id="modalOverlay">
+    <div class="modal__content" id="modalContent">
+      <button class="modal__close" id="modalClose">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
